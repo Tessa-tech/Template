@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold "style="font-size: 30px;" id="span">
+                    Tessa Kitchen
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end aligh-center"
+                id="main-nav">
+                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                 </ul>
+            
+                 <form action="">
+                    <!-- <div class="search" id="srch"> -->
+                        <input type="text" id="searchInput" placeholder="search here" autocomplete="off" class="mt-3">
+                        <ul id="suggestions"></ul>
+                        <!-- <input type="submit" value="search"> -->
+    
+                    <!-- </div> -->
+                </form>
+            </div>
+            
+        </div>
+    </nav>
+     <!-- about sections start -->
+     <section class="About" id="About" style="background: gainsboro;" >
+         <div class="container-lg">
+            <div>
+                <h1 class="head text-center fw-bold">About <span>us</span></h1>
+            </div>
+            <div class="row my-5 ">
+                <div class="card mb-3 ms-5-lg d-lg-none d-md-flex" style="max-width: 900px;" id="bouts">
+                    <div class="row g-0" >
+                      <div class=" col-md-4 mt-4" style="height: 200px;">
+                        <img  src="img/IMG_1778.JPG" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8" id="text">
+                        <div class="card-body text-align-end justify-content-end" style="width: px;">
+                          <h5 class="card-title fw-bold mb-3 mt-5" style="color: white ;text-transform: uppercase;">What makes us special</h5>
+                          <p class="card-text" style="color: whitesmoke;">We believe in delivering exquisite experience.
+                            <br>Our vision goes beyound just preparing quality, authentic,
+                            hygenic and mouth watering food. We specialize in preparing 
+                            traditional dishes too and fresh refreshing snacks and coffe drinks
+                            with a sophisticated approach and maintaining authencity 
+                            so you can experience
+                            domething unique. <br> Let us take you on a journey to sublime your senses,
+                             tease your taste buds and discover true cultural food that cant be matched
+                             elsewhere</p>
+                            
+                        </div>
+                      </div>
+                    </div>
+                </div>
+         </div>
+       <div class="bouts d-sm-none d-none d-lg-flex">
+            <div class="image">
+                <img src="img/IMG_1778.JPG" alt="">
+            </div>
+            <div class="container">
+                <h3>What makes us special</h3>
+                <p>We believe in delivering exquisite experience.
+                <br>Our vision goes beyound just preparing quality, authentic,
+                hygenic and mouth watering food. We specialize in preparing 
+                traditional dishes too and fresh refreshing snacks and coffe drinks
+                with a sophisticated approach and maintaining authencity 
+                so you can experience
+                domething unique. <br> Let us take you on a journey to sublime your senses,
+                 tease your taste buds and discover true cultural food that cant be matched
+                 elsewhere
+                </p>
+                
+            </div>
+       </div>
+    </section>
+
+<!-- about section ends -->
+
+<!-- footer -->
+<div class="hstack gap-3 bg-dark mt-5 d-">
+    <div class="container">
+        <div class="p-2 text-muted">
+            <h3 class="text-success">Contact</h3>
+            <i class="fas fa-map-marker"> via 20 Nike road, Enugu State</i><br>
+            <i class="fas fa-phone "> phone: +234 089 765 43</i><br>
+            <i class="fas fa-envelope"> estsy@gmail.com</i><br>
+            <i class="fab fa-twitter">  tessaquuen</i><br>
+            <i class="fab fa-instagram">  Tessa Gold</i>
+        </div>
+        <div class="p-2 text-muted">
+            <p class="text-muted">Copyright 2023 All right reserved, this website is made with love
+                by Tessa Kitchen, inc</p>
+        </div>
+        <div class="p-2 text muted d-flex">
+            <a class="nav me-3" href="#">About</a>
+            <a class="nav me-3" href="#">Legal Stuff</a>
+            <a class="nav me-3" href="#">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchInput =
+    document.getElementById('searchInput');
+    const suggestions =
+    document.getElementById('suggestions');
+
+    const searchSuggestions = [
+       'menu' ,
+       'apple',
+       'orange'
+    ];
+
+    searchInput.addEventListener('input', ()=>{
+        const inputValue= searchInput.value.toLowerCase();
+        const matchedSuggestions = searchSuggestions.filter(suggestion=>
+        suggestion.toLowerCase().startswIth(inputValue
+        )
+        );
+
+        suggestions.innerHTML = '';
+
+        matchedSuggestions.forEach(suggestion=>{
+            const li = document.createElement('li');
+            li.textContent = suggestion;
+            suggestions.appendChild(li);
+        });
+    });
+    suggestions.addEventListener('click',e =>{
+    if(e.target.nodeName=== 'LI'){
+        searchInput.value = e.target.textContent;
+        suggestions.innerHTML = '';        
+    }
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,1392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+            
+nav{
+    position: fixed;
+    top: 0;right: 0;left: 0;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+#span{
+    color: orangered;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+#main-nav a{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    text-decoration: none;
+    color: #000000;
+    text-transform: capitalize;
+}
+#main-nav a:hover{
+    color: orangered;
+    border-bottom: 1px solid orangered;
+    padding-bottom: 3px;
+    transition: .4s;
+    cursor: pointer;
+}
+header .search{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    display: none;
+}
+header .search input{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+section{
+    padding: 20px 7%;
+}
+#Home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-height: 100vh;
+    align-items: center;
+    /* background: url(../tessa/IMG_1790.JPG)no-repeat; */
+    background-size: cover;
+    
+}
+#Home .container{
+    padding-top: 10px;
+    width: 700px;
+    margin: 20px 30px;
+}
+#Home .container h5{
+    color: #a314a3;
+    font-size: 25px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+#Home .container h3{
+    color: #858181;
+    font-size: 45px;
+    text-transform: capitalize;
+    font-family: serif;
+    letter-spacing: 4px;
+    line-height: 45px;
+    margin: 10px 0;
+}
+#containerr{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+    margin-left: 60%;
+    margin-top: 150px;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 3px;
+    background:rgba(27, 27, 60, 0.5);
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: transform .4s;
+    text-decoration: none;
+    margin-top: 5px;
+    box-shadow: inset 10px 10px 20px -1px rgba(27, 27, 60, 0.5),
+                inset -10px -10px 10px -1px rgba(225, 225, 225, 0.70);
+    
+}
+.btn:hover{
+    color: #000123;
+    transform: scale(1.2);
+}
+.head{
+    margin-top: 70px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    font-size: 3rem;
+}
+.head span{
+    color: orangered;
+    text-transform: uppercase;
+}
+.About .bouts{
+    display: flex;
+    align-items: center;
+    background: #000000;
+    flex-wrap: wrap;
+}
+.About .bouts .image{
+    flex: 1 1 45px;
+}
+.About .bouts .image img{
+    width: 100%;
+}
+.About .bouts .container{
+    flex: 1 1 45px;
+    padding: 30px;
+}
+.About .bouts .container h3{
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.About .bouts .container p{
+    font-size: 20px;
+    color: #858181;
+    padding: 15px 0;
+    line-height: 30px;
+}
+.Menu{
+    width: 100%;
+}
+
+
+.Contact p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 24px;
+    line-height: 30px;
+}
+.put{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 25px;
+}
+.name{
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.email{
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.sub{
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.comment{
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid black;
+}
+Input[type="submit"]{
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 1150px;
+    font-size: 15px;
+    border: none;
+    margin-top: 15px;
+
+}
+
+@media only screen and (min-width:780px){
+    nav{
+        position: fixed;
+        top: 0;right: 0;left: 0;
+        padding: 10px 20px;
+        background: white;
+        box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    #span{
+        color: orangered;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    }
+    #main-nav a{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+        text-decoration: none;
+        color: #000000;
+        text-transform: capitalize;
+    }
+    #main-nav a:hover{
+        color: orangered;
+        border-bottom: 1px solid orangered;
+        padding-bottom: 3px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    header .search{
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        display: none;
+    }
+    header .search input{
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        color: #000000;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+    
+    section{
+        padding: 20px 7%;
+    }
+    #large {
+        width: 450px;
+    }
+    #Home{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        min-height: 100vh;
+        align-items: center;
+        /* background: url(../tessa/IMG_1781.JPG); */
+        background-size: cover;
+    }
+    #Home .container{
+        padding-top: 10px;
+        width: 700px;
+        margin: 20px 30px;
+    }
+    #Home .container h5{
+        color: #a314a3;
+        font-size: 25px;
+        font-family: cursive;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+    #Home .container h3{
+        color: #858181;
+        font-size: 45px;
+        text-transform: capitalize;
+        font-family: serif;
+        letter-spacing: 4px;
+        line-height: 45px;
+        margin: 10px 0;
+    }
+    .containerr{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: none;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 3;
+        margin-left: 60%;
+        margin-top: 150px;
+    }
+    
+    .head{
+        margin-top: 70px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        font-size: 3rem;
+    }
+    .head span{
+        color: orangered;
+        text-transform: uppercase;
+    }
+    .About .bouts{
+        display: flex;
+        align-items: center;
+        background: #000000;
+        flex-wrap: wrap;
+    }
+    .About .bouts .image{
+        flex: 1 1 45px;
+    }
+    .About .bouts .image img{
+        width: 100%;
+    }
+    .About .bouts .container{
+        flex: 1 1 45px;
+        padding: 30px;
+    }
+    .About .bouts .container h3{
+        font-size: 25px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    .About .bouts .container p{
+        font-size: 20px;
+        color: #858181;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+    .btn{
+        display: inline-block;
+        padding: 8px 3px;
+        background:rgba(27, 27, 60, 0.5);
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 20px;
+        transition: transform .4s;
+        text-decoration: none;
+        margin-top: 5px;
+        box-shadow: inset 10px 10px 20px -1px rgba(27, 27, 60, 0.5),
+                    inset -10px -10px 10px -1px rgba(225, 225, 225, 0.70);
+        
+    }
+    #bouts{
+        background: #000000;
+        margin-left: 40px;
+        
+    }
+    .btn:hover{
+        color: #000123;
+        transform: scale(1.2);
+    }
+    .Menu{
+        width: 100%;
+    }
+    .Menu #container{
+        gap: 20px;
+    }
+    .Menu #container #cards{
+        padding: 10px 15px;
+        gap: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 10px black;
+        overflow: hidden;
+    }
+    .Menu #container #cards img{
+        height: 250px;
+        width: 260px;
+        border-radius: 5px;
+    }
+
+    .Menu #container #cards:hover{
+        background: wheat;
+    }
+    
+    
+    .Contact p{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px 24px;
+        line-height: 30px;
+    }
+    .put{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25px;
+    }
+    .name{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .email{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .sub{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .comment{
+        margin-bottom: 15px;
+        padding: 20px;
+        border: 1px solid #000000;
+    }
+    Input[type="submit"]{
+        width: 250px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-right: 1150px;
+        font-size: 15px;
+        border: none;
+        margin-top: 15px;
+    
+    } 
+}
+
+@media only screen and (max-width:780px){
+    nav{
+        position: fixed;
+        top: 0;right: 0;left: 0;
+        padding: 10px 20px;
+        background: white;
+        box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    #span{
+        color: orangered;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    }
+    #main-nav a{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+        text-decoration: none;
+        color: #000000;
+        text-transform: capitalize;
+    }
+    #main-nav a:hover{
+        color: orangered;
+        border-bottom: 1px solid orangered;
+        padding-bottom: 3px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    header .search{
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        display: none;
+    }
+    header .search input{
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        color: #000000;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+    
+    section{
+        padding: 20px 7%;
+    }
+    #Home{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        min-height: 100vh;
+        align-items: center;
+        /* background: url(../tessa/IMG_1781.JPG); */
+        background-size: cover;
+    }
+    #Home .container{
+        padding-top: 10px;
+        width: 700px;
+        margin: 20px 30px;
+    }
+    #Home .container h5{
+        color: #a314a3;
+        font-size: 25px;
+        font-family: cursive;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+    #Home .container h3{
+        color: #858181;
+        font-size: 45px;
+        text-transform: capitalize;
+        font-family: serif;
+        letter-spacing: 4px;
+        line-height: 45px;
+        margin: 10px 0;
+    }
+    .containerr{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: none;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 3;
+        margin-left: 60%;
+        margin-top: 150px;
+    }
+    
+    .head{
+        margin-top: 70px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        font-size: 3rem;
+    }
+    .head span{
+        color: orangered;
+        text-transform: uppercase;
+    }
+    #bouts{
+        background: #000000;
+        
+    }
+    #text{
+        margin-top: 130px;
+    }
+    .btn{
+        display: inline-block;
+        padding: 8px 3px;
+        background:rgba(27, 27, 60, 0.5);
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 20px;
+        transition: transform .4s;
+        text-decoration: none;
+        margin-top: 5px;
+        box-shadow: inset 10px 10px 20px -1px rgba(27, 27, 60, 0.5),
+                    inset -10px -10px 10px -1px rgba(225, 225, 225, 0.70);
+        
+    }
+    .btn:hover{
+        color: #000123;
+        transform: scale(1.2);
+    }
+    .Menu{
+        width: 100%;
+    }
+    .Menu #container{
+        gap: 20px;
+    }
+    .Menu #container #cards{
+        padding: 10px 15px;
+        gap: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 10px black;
+        overflow: hidden;
+    }
+    .Menu #container #cards img{
+        height: 250px;
+        width: 260px;
+        border-radius: 5px;
+    }
+
+    .Menu #container #cards:hover{
+        background: wheat;
+    }
+    
+    
+    .Contact p{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px 24px;
+        line-height: 30px;
+    }
+    .put{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25px;
+    }
+    .name{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .email{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .sub{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .comment{
+        margin-bottom: 15px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    Input[type="submit"]{
+        width: 250px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-right: 1150px;
+        font-size: 15px;
+        border: none;
+        margin-top: 15px;
+    
+    } 
+}
+@media only screen and (max-width:500px){
+    nav{
+        position: fixed;
+        top: 0;right: 0;left: 0;
+        padding: 10px 20px;
+        background: white;
+        box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    #span{
+        color: orangered;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    }
+    #main-nav a{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+        text-decoration: none;
+        color: #000000;
+        text-transform: capitalize;
+    }
+    #main-nav a:hover{
+        color: orangered;
+        border-bottom: 1px solid orangered;
+        padding-bottom: 3px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    header .search{
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        display: none;
+    }
+    header .search input{
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        color: #000000;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+    
+    section{
+        padding: 20px 7%;
+    }
+    #Home{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        min-height: 100vh;
+        align-items: center;
+        /* background: url(../tessa/IMG_1781.JPG); */
+        background-size: cover;
+    }
+    #Home .container{
+        padding-top: 10px;
+        width: 700px;
+        margin: 20px 30px;
+    }
+    #Home .container h5{
+        color: #a314a3;
+        font-size: 25px;
+        font-family: cursive;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+    #Home .container h3{
+        color: #858181;
+        font-size: 45px;
+        text-transform: capitalize;
+        font-family: serif;
+        letter-spacing: 4px;
+        line-height: 45px;
+        margin: 10px 0;
+    }
+    .containerr{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: none;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 3;
+        margin-left: 60%;
+        margin-top: 150px;
+    }
+    
+    .head{
+        margin-top: 70px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        font-size: 3rem;
+    }
+    .head span{
+        color: orangered;
+        text-transform: uppercase;
+    }
+    #bouts{
+        background: #000000;
+        
+    }
+    #text{
+        margin-top: 20px;
+    }
+    .btn{
+        display: inline-block;
+        padding: 8px 3px;
+        background:rgba(27, 27, 60, 0.5);
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 20px;
+        transition: transform .4s;
+        text-decoration: none;
+        margin-top: 5px;
+        box-shadow: inset 10px 10px 20px -1px rgba(27, 27, 60, 0.5),
+                    inset -10px -10px 10px -1px rgba(225, 225, 225, 0.70);
+        
+    }
+    .btn:hover{
+        color: #000123;
+        transform: scale(1.2);
+    }
+    .Menu{
+        width: 100%;
+    }
+    .Menu #container{
+        gap: 20px;
+    }
+    .Menu #container #cards{
+        padding: 10px 15px;
+        gap: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 10px black;
+        overflow: hidden;
+    }
+    .Menu #container #cards img{
+        height: 250px;
+        width: 260px;
+        border-radius: 5px;
+    }
+
+    .Menu #container #cards:hover{
+        background: wheat;
+    }
+    
+    
+    .Contact p{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px 24px;
+        line-height: 30px;
+    }
+    .put{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25px;
+    }
+    .name{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .email{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .sub{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .comment{
+        margin-bottom: 15px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    Input[type="submit"]{
+        width: 250px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-right: 1150px;
+        font-size: 15px;
+        border: none;
+        margin-top: 15px;
+    
+    } 
+}
+
+
+@media only screen and (max-width:px){
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: white;
+        box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    header .navs{
+        padding-bottom: 8px;
+        font-size: 30px;
+        padding-left: 5px;
+        text-decoration: none;
+        color: darksalmon;
+    }
+    header .navs span{
+        color: orangered;
+        font-size: 40px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    }
+    header .menus{
+        margin-left:50px;
+    }
+    header .menus li{
+        display: inline-block;
+    }
+    header .menus a{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+        text-decoration: none;
+        padding-top: 10px;
+        color: #000000;
+        margin: 0 15px;
+        text-transform: capitalize;
+    }
+    header .menus a:hover{
+        color: orangered;
+        border-bottom: 1px solid orangered;
+        padding-bottom: 3px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    header .icons{
+        color: #000;
+        cursor: pointer;
+        font-size: 25px;
+        margin-right: 65px;
+    }
+    header .icons button{
+        background-color: #000123;
+        border-radius: 10px;
+        font-size: 10px;
+        padding: 8px;
+    }
+    header .icons div:hover{
+        color: orangered;
+    }
+    #menu-btn{
+        display: none;
+    }
+    header .search{
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        display: none;
+    }
+    header .search input{
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        color: #000000;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+    header .search span{
+        position: absolute;
+        font-weight: bolder;
+        cursor: pointer;
+        right: 0;
+        top: -5px;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    header .search span:hover{
+        color: #a314a3;
+    }
+    button{
+        background-color: orangered;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        margin-right: -40px;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 30px;
+        transition: transform .4s;
+    }
+    button:hover{
+        transform: scale(1.2);
+    }
+    section{
+        padding: 20px 7%;
+    }
+    #Home{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        min-height: 100vh;
+        align-items: center;
+        /* background: url(../tessa/IMG_.JPG)no-repeat; */
+        background-size: cover;
+    }
+    #Home .container{
+        padding-top: 10px;
+        width: 700px;
+        margin: 20px 30px;
+    }
+    #Home .container h5{
+        font-size: 25px;
+        font-family: cursive;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+    #Home .container h3{
+        color: #858181;
+        font-size: 45px;
+        text-transform: capitalize;
+        font-family: serif;
+        letter-spacing: 4px;
+        line-height: 45px;
+        margin: 10px 0;
+    }
+    .containerr{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: none;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 3;
+        margin-left: 60%;
+        margin-top: 150px;
+    }
+    .top-header{
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .top-header h3{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .top-header span{
+        position: absolute;
+        font-weight: bolder;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    .top-header span:hover{
+        background-color: rgba(139, 144, 139, 0.782);
+        color: #000;
+    }
+    .input-group{
+        width: 100%;
+    }
+    .input-field{
+        margin: 15px 0;
+        position: relative;
+    }
+    .input-box{
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        padding: 7px 45px 0 20px;
+        background: rgb(200, 220, 220, 0.5);
+        outline: none;
+    }
+    .input-field label{
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-size: 15px;
+        transition: .3s ease-in-out;
+    
+    }
+    .input-box:focus ~ label, .input-box:valid ~ label{
+        top: 2px;
+        font-size: 10px;
+        color: #12de;
+        font-weight: 500;
+    }
+    
+    .remember{
+        display: flex;
+        font-size: 15px;
+        margin: 12px 0 30px 0;
+        color: #000;
+    }
+    .check{
+        margin-right: 8px;
+        width: 14px;
+    }
+    .input-field .submit{
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        background: #12de;
+        color: #fff;
+        box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.145);
+        cursor: pointer;
+        transition: .4s;
+    }
+    .input-field .submit:hover{
+        background: rgb(27, 27, 60, 0.5);
+        box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
+    }
+    .forgot{
+        text-align: left;
+        font-size: 15px;
+        font: 500;
+        margin-left: 80px;
+    }
+    .forgot a{
+        text-decoration: none;
+        color: #000;
+    }
+    .sign{
+        margin-left: 33px;
+        font-size: 15px;
+    }
+    
+    .btn{
+        display: inline-block;
+        padding: 8px 3px;
+        background:rgba(27, 27, 60, 0.5);
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 20px;
+        transition: transform .4s;
+        text-decoration: none;
+        margin-top: 5px;
+        box-shadow: inset 10px 10px 20px -1px rgba(27, 27, 60, 0.5),
+                    inset -10px -10px 10px -1px rgba(225, 225, 225, 0.70);
+        
+    }
+    .btn:hover{
+        color: #000123;
+        transform: scale(1.2);
+    }
+    .head{
+        margin-top: 70px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        font-size: 3rem;
+    }
+    .head span{
+        color: orangered;
+        text-transform: uppercase;
+    }
+    .About .bouts{
+        display: flex;
+        align-items: center;
+        background: #000000;
+        flex-wrap: wrap;
+    }
+    .About .bouts .image{
+        flex: 1 1 45px;
+    }
+    .About .bouts .image img{
+        width: 100%;
+    }
+    .About .bouts .container{
+        flex: 1 1 45px;
+        padding: 30px;
+    }
+    .About .bouts .container h3{
+        font-size: 25px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    .About .bouts .container p{
+        font-size: 20px;
+        color: #858181;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+    .Menu{
+        width: 100%;
+        margin-right: 50px;
+    }
+    .Menu .container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .Menu .container .cards{
+        padding: 12px;
+        text-align: center;
+        box-shadow: 5px 5px 10px black;
+        overflow: hidden;
+    }
+    .Menu .container .cards img{
+        height: 250px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .Menu .container .cards .intro{
+        height: 150px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background: rgb(27, 27, 60, 0.5);
+        transition: 2s;
+    }
+    .Menu .container .cards .intro h3{
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-right: 40px;
+    }
+    .Menu .container .cards .intro  .price{
+        color: #a314a3;
+        font-size: 20px;
+    }
+    .Menu .container .cards:hover{
+        background: #fffed3;
+    }
+    .Menu .container2{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .Menu .container2 .cards{
+        padding: 12px;
+        text-align: center;
+        box-shadow: 5px 5px 10px black;
+        overflow: hidden;
+    }
+    .Menu .container2 .cards img{
+        height: 250px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .Menu .container2 .cards .intro{
+        height: 150px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background:rgb(27, 27, 60, 0.5);
+        transition: 2s;
+    }
+    .Menu .container2 .cards .intro h3{
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        margin: 10px 0;
+    }
+    .Menu .container2 .cards .intro  .price{
+        color: #a314a3;
+        font-size: 20px;
+    }
+    .Menu .container2 .cards:hover{
+        background: #fffed3;
+    }
+    .Menu .container2 .cards .intro h5{
+        font-size: 15px;
+        color: #d0c7c7;
+        text-transform: capitalize;
+    }
+    .Menu .container3{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .Menu .container3 .cards{
+        padding: 12px;
+        text-align: center;
+        box-shadow:  5px 5px 10px black;
+        overflow: hidden;
+    }
+    .Menu .container3 .cards img{
+        height: 250px;
+        width: 345px;
+        border-radius: 5px;
+    }
+    .Menu .container3 .cards .intro{
+        height: 150px;
+        width: 354px;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background: rgb(27, 27, 60, 0.5);
+        transition: 2s;
+    }
+    .Menu .container3 .cards .intro h3{
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    .Menu .container3 .cards .intro  .price{
+        color: #a314a3;
+        font-size: 20px;
+    }
+    .Menu .container3 .cards:hover{
+        background: #fffed3;
+    }
+    .Menu .container3 .cards .intro h5{
+        font-size: 15px;
+        color: #d0c7c7;
+        text-transform: capitalize;
+    }
+    .Blog .bouts{
+        display: flex;
+        align-items: center;
+        background: #fff;
+        flex-wrap: wrap;
+    }
+    .Blog .bouts .image{
+        flex: 1 1 45px;
+    }
+    .Blog .bouts .image img{
+        width: 100%;
+    }
+    .Blog .bouts .container{
+        flex: 1 1 45px;
+        padding: 30px;
+    }
+    .Blog .bouts .container h3{
+        font-size: 25px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .Blog .bouts .container p{
+        font-size: 20px;
+        color: #858181;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+    .Blog .bouts2{
+        display: flex;
+        align-items: center;
+        background: #fff;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+    .Blog .bouts2 .image{
+        flex: 1 1 45px;
+    }
+    .Blog .bouts2 .image img{
+        width: 100%;
+    }
+    .Blog .bouts2 .container{
+        flex: 1 1 45px;
+        padding: 30px;
+    }
+    .Blog .bouts2 .container h3{
+        font-size: 25px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .Blog .bouts2 .container p{
+        font-size: 20px;
+        color: #858181;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+    .Blog .bouts3{
+        display: flex;
+        align-items: center;
+        background: #fff;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+    .Blog .bouts3 .image{
+        flex: 1 1 45px;
+    }
+    .Blog .bouts3 .image img{
+        width: 100%;
+    }
+    .Blog .bouts3 .container{
+        flex: 1 1 45px;
+        padding: 30px;
+    }
+    .Blog .bouts3 .container h3{
+        font-size: 25px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .Blog .bouts3 .container p{
+        font-size: 20px;
+        color: #858181;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+    .Contact p{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px 24px;
+        line-height: 30px;
+    }
+    .put{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25px;
+    }
+    .name{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .email{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .sub{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .comment{
+        margin-bottom: 15px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    Input[type="submit"]{
+        width: 250px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-right: 1150px;
+        font-size: 15px;
+        border: none;
+        margin-top: 15px;
+    
+    }
+}
